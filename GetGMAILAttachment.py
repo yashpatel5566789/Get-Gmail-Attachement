@@ -48,8 +48,6 @@ def GetAttachments(service, user_id, msg_id, store_dir):
 
 def GetMessageId(service, user_id, query):
 
-    messageId = '16ff298d78e221d6'
-
     try:
         response = service.users().messages().list(userId=user_id,
                                                    q=query).execute()
